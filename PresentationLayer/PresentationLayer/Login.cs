@@ -33,7 +33,7 @@ namespace PresentationLayer
             }
             else
             {
-                MessageBox.Show("Pogresni podaci!");
+                MessageBox.Show("Pogresna loznka ili username!");
             }
             
         }
