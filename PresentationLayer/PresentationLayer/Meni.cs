@@ -29,5 +29,21 @@ namespace PresentationLayer
             l.Closed += (s, args) => this.Close();
             l.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var u = new Ulaz();
+            u.Closed += (s, args) => this.Close();
+            u.Show();
+        }
+
+        private void buttonMeniIzlaz_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var i = new Izlaz();
+            i.Closed += (s, args) => this.Close();
+            i.Show();
+        }
     }
 }

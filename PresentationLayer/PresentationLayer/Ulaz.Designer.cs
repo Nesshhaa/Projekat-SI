@@ -37,12 +37,20 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxVrstaRobe = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.comboBoxProizvodjac = new System.Windows.Forms.ComboBox();
+            this.comboBoxOvlascenoLice = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.buttonUlazPotvrdi = new System.Windows.Forms.Button();
+            this.buttonUlazNazad = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelUlazbroj
@@ -50,7 +58,7 @@
             this.labelUlazbroj.AutoSize = true;
             this.labelUlazbroj.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.labelUlazbroj.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUlazbroj.Location = new System.Drawing.Point(12, 31);
+            this.labelUlazbroj.Location = new System.Drawing.Point(90, 15);
             this.labelUlazbroj.Name = "labelUlazbroj";
             this.labelUlazbroj.Size = new System.Drawing.Size(67, 15);
             this.labelUlazbroj.TabIndex = 0;
@@ -58,7 +66,7 @@
             // 
             // textBoxUlazBroj
             // 
-            this.textBoxUlazBroj.Location = new System.Drawing.Point(85, 28);
+            this.textBoxUlazBroj.Location = new System.Drawing.Point(163, 12);
             this.textBoxUlazBroj.Name = "textBoxUlazBroj";
             this.textBoxUlazBroj.Size = new System.Drawing.Size(100, 20);
             this.textBoxUlazBroj.TabIndex = 1;
@@ -105,22 +113,34 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(91, 62);
+            this.textBox1.Location = new System.Drawing.Point(115, 62);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(121, 20);
             this.textBox1.TabIndex = 8;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.comboBoxVrstaRobe);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 81);
+            this.groupBox1.Location = new System.Drawing.Point(12, 89);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(236, 109);
+            this.groupBox1.Size = new System.Drawing.Size(251, 109);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
+            // 
+            // comboBoxVrstaRobe
+            // 
+            this.comboBoxVrstaRobe.FormattingEnabled = true;
+            this.comboBoxVrstaRobe.Items.AddRange(new object[] {
+            "Miker",
+            "Vilamet"});
+            this.comboBoxVrstaRobe.Location = new System.Drawing.Point(115, 28);
+            this.comboBoxVrstaRobe.Name = "comboBoxVrstaRobe";
+            this.comboBoxVrstaRobe.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxVrstaRobe.TabIndex = 10;
+            this.comboBoxVrstaRobe.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -132,36 +152,109 @@
             this.label2.TabIndex = 9;
             this.label2.Text = "Kolicina:";
             // 
-            // comboBox1
+            // groupBox2
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.groupBox2.Controls.Add(this.comboBoxProizvodjac);
+            this.groupBox2.Controls.Add(this.comboBoxOvlascenoLice);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Location = new System.Drawing.Point(12, 204);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(251, 100);
+            this.groupBox2.TabIndex = 10;
+            this.groupBox2.TabStop = false;
+            // 
+            // comboBoxProizvodjac
+            // 
+            this.comboBoxProizvodjac.FormattingEnabled = true;
+            this.comboBoxProizvodjac.Items.AddRange(new object[] {
             "Miker",
             "Vilamet"});
-            this.comboBox1.Location = new System.Drawing.Point(91, 28);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 10;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBoxProizvodjac.Location = new System.Drawing.Point(115, 15);
+            this.comboBoxProizvodjac.Name = "comboBoxProizvodjac";
+            this.comboBoxProizvodjac.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxProizvodjac.TabIndex = 12;
+            // 
+            // comboBoxOvlascenoLice
+            // 
+            this.comboBoxOvlascenoLice.FormattingEnabled = true;
+            this.comboBoxOvlascenoLice.Items.AddRange(new object[] {
+            "Miker",
+            "Vilamet"});
+            this.comboBoxOvlascenoLice.Location = new System.Drawing.Point(115, 51);
+            this.comboBoxOvlascenoLice.Name = "comboBoxOvlascenoLice";
+            this.comboBoxOvlascenoLice.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxOvlascenoLice.TabIndex = 11;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(15, 52);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(94, 17);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Ovlasceno lice:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(15, 16);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(78, 17);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Proizvodjac:";
+            // 
+            // buttonUlazPotvrdi
+            // 
+            this.buttonUlazPotvrdi.BackColor = System.Drawing.Color.Transparent;
+            this.buttonUlazPotvrdi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonUlazPotvrdi.Image = ((System.Drawing.Image)(resources.GetObject("buttonUlazPotvrdi.Image")));
+            this.buttonUlazPotvrdi.Location = new System.Drawing.Point(378, 303);
+            this.buttonUlazPotvrdi.Name = "buttonUlazPotvrdi";
+            this.buttonUlazPotvrdi.Size = new System.Drawing.Size(55, 43);
+            this.buttonUlazPotvrdi.TabIndex = 11;
+            this.buttonUlazPotvrdi.UseVisualStyleBackColor = false;
+            // 
+            // buttonUlazNazad
+            // 
+            this.buttonUlazNazad.Location = new System.Drawing.Point(25, 313);
+            this.buttonUlazNazad.MaximumSize = new System.Drawing.Size(75, 23);
+            this.buttonUlazNazad.MinimumSize = new System.Drawing.Size(75, 23);
+            this.buttonUlazNazad.Name = "buttonUlazNazad";
+            this.buttonUlazNazad.Size = new System.Drawing.Size(75, 23);
+            this.buttonUlazNazad.TabIndex = 12;
+            this.buttonUlazNazad.Text = "Nazad";
+            this.buttonUlazNazad.UseVisualStyleBackColor = true;
+            this.buttonUlazNazad.Click += new System.EventHandler(this.buttonUlazNazad_Click);
             // 
             // Ulaz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(506, 309);
+            this.ClientSize = new System.Drawing.Size(506, 349);
+            this.Controls.Add(this.buttonUlazNazad);
+            this.Controls.Add(this.buttonUlazPotvrdi);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBoxUlazBroj);
             this.Controls.Add(this.labelUlazbroj);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Ulaz";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ulaz";
+            this.Load += new System.EventHandler(this.Ulaz_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,7 +270,14 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxVrstaRobe;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ComboBox comboBoxProizvodjac;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox comboBoxOvlascenoLice;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button buttonUlazPotvrdi;
+        private System.Windows.Forms.Button buttonUlazNazad;
     }
 }

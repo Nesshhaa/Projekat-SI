@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace PresentationLayer
 {
-    public partial class Ulaz : Form
+    public partial class Izlaz : Form
     {
-        public Ulaz()
+        public Izlaz()
         {
             InitializeComponent();
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void buttonUlazNazad_Click(object sender, EventArgs e)
@@ -30,7 +25,7 @@ namespace PresentationLayer
             m.Show();
         }
 
-        private void Ulaz_Load(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }

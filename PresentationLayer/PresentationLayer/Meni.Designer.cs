@@ -29,37 +29,39 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Meni));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonMeniIzlaz = new System.Windows.Forms.Button();
+            this.buttonMeniUlaz = new System.Windows.Forms.Button();
             this.labelUlaz = new System.Windows.Forms.Label();
             this.labelIzlaz = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonMeniOdjava = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonMeniIzlaz
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(173, 33);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(74, 70);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonMeniIzlaz.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMeniIzlaz.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonMeniIzlaz.Image = ((System.Drawing.Image)(resources.GetObject("buttonMeniIzlaz.Image")));
+            this.buttonMeniIzlaz.Location = new System.Drawing.Point(173, 33);
+            this.buttonMeniIzlaz.Name = "buttonMeniIzlaz";
+            this.buttonMeniIzlaz.Size = new System.Drawing.Size(74, 70);
+            this.buttonMeniIzlaz.TabIndex = 0;
+            this.buttonMeniIzlaz.UseVisualStyleBackColor = false;
+            this.buttonMeniIzlaz.Click += new System.EventHandler(this.buttonMeniIzlaz_Click);
             // 
-            // button2
+            // buttonMeniUlaz
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(33, 148);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(74, 70);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = false;
+            this.buttonMeniUlaz.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMeniUlaz.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonMeniUlaz.Image = ((System.Drawing.Image)(resources.GetObject("buttonMeniUlaz.Image")));
+            this.buttonMeniUlaz.Location = new System.Drawing.Point(33, 148);
+            this.buttonMeniUlaz.Name = "buttonMeniUlaz";
+            this.buttonMeniUlaz.Size = new System.Drawing.Size(74, 70);
+            this.buttonMeniUlaz.TabIndex = 1;
+            this.buttonMeniUlaz.UseVisualStyleBackColor = false;
+            this.buttonMeniUlaz.Click += new System.EventHandler(this.button2_Click);
             // 
             // labelUlaz
             // 
@@ -92,18 +94,18 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // button3
+            // buttonMeniOdjava
             // 
-            this.button3.AutoSize = true;
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(173, 148);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(74, 70);
-            this.button3.TabIndex = 5;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.buttonMeniOdjava.AutoSize = true;
+            this.buttonMeniOdjava.BackColor = System.Drawing.Color.Transparent;
+            this.buttonMeniOdjava.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonMeniOdjava.Image = ((System.Drawing.Image)(resources.GetObject("buttonMeniOdjava.Image")));
+            this.buttonMeniOdjava.Location = new System.Drawing.Point(173, 148);
+            this.buttonMeniOdjava.Name = "buttonMeniOdjava";
+            this.buttonMeniOdjava.Size = new System.Drawing.Size(74, 70);
+            this.buttonMeniOdjava.TabIndex = 5;
+            this.buttonMeniOdjava.UseVisualStyleBackColor = false;
+            this.buttonMeniOdjava.Click += new System.EventHandler(this.button3_Click);
             // 
             // label1
             // 
@@ -121,12 +123,12 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(275, 264);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.buttonMeniOdjava);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelIzlaz);
             this.Controls.Add(this.labelUlaz);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonMeniUlaz);
+            this.Controls.Add(this.buttonMeniIzlaz);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Meni";
@@ -141,12 +143,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonMeniIzlaz;
+        private System.Windows.Forms.Button buttonMeniUlaz;
         private System.Windows.Forms.Label labelUlaz;
         private System.Windows.Forms.Label labelIzlaz;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonMeniOdjava;
         private System.Windows.Forms.Label label1;
     }
 }
