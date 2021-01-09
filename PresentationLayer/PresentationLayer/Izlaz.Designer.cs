@@ -46,6 +46,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.buttonIzlazPotvrdi = new System.Windows.Forms.Button();
             this.buttonUlazNazad = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBoxRoba.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -233,12 +234,20 @@
             this.buttonUlazNazad.UseVisualStyleBackColor = true;
             this.buttonUlazNazad.Click += new System.EventHandler(this.buttonUlazNazad_Click);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(30, 49);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 18;
+            // 
             // Izlaz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(510, 353);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.buttonUlazNazad);
             this.Controls.Add(this.buttonIzlazPotvrdi);
             this.Controls.Add(this.pictureBox3);
@@ -286,5 +295,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button buttonIzlazPotvrdi;
         private System.Windows.Forms.Button buttonUlazNazad;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
