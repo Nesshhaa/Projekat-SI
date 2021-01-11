@@ -29,136 +29,121 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Izlaz));
-            this.textBoxIzlazBroj = new System.Windows.Forms.TextBox();
-            this.labelIzlazbroj = new System.Windows.Forms.Label();
-            this.groupBoxRoba = new System.Windows.Forms.GroupBox();
-            this.comboBoxIzlazVrstaRobe = new System.Windows.Forms.ComboBox();
-            this.labelKolicina = new System.Windows.Forms.Label();
-            this.textBoxIzlazKolicina = new System.Windows.Forms.TextBox();
-            this.labelVrstaRobe = new System.Windows.Forms.Label();
+            this.buttonUlazPotvrdi = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dateTimePickerIzlaz = new System.Windows.Forms.DateTimePicker();
+            this.buttonUlazNazad = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.comboBoxKupac = new System.Windows.Forms.ComboBox();
-            this.comboBoxOvlascenoLice = new System.Windows.Forms.ComboBox();
+            this.comboBoxOvlascenoLiceIzlaz = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.labelKupac = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.buttonIzlazPotvrdi = new System.Windows.Forms.Button();
-            this.buttonUlazNazad = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.groupBoxRoba.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.label4 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBoxVrstaRobeIzlaz = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBoxKolicinaIzlaz = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxIzlazBroj = new System.Windows.Forms.TextBox();
+            this.labelIzlazbroj = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBoxIzlazBroj
+            // buttonUlazPotvrdi
             // 
-            this.textBoxIzlazBroj.Location = new System.Drawing.Point(163, 12);
-            this.textBoxIzlazBroj.Name = "textBoxIzlazBroj";
-            this.textBoxIzlazBroj.Size = new System.Drawing.Size(100, 20);
-            this.textBoxIzlazBroj.TabIndex = 3;
+            this.buttonUlazPotvrdi.BackColor = System.Drawing.Color.Transparent;
+            this.buttonUlazPotvrdi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonUlazPotvrdi.Image = ((System.Drawing.Image)(resources.GetObject("buttonUlazPotvrdi.Image")));
+            this.buttonUlazPotvrdi.Location = new System.Drawing.Point(379, 13);
+            this.buttonUlazPotvrdi.Name = "buttonUlazPotvrdi";
+            this.buttonUlazPotvrdi.Size = new System.Drawing.Size(55, 43);
+            this.buttonUlazPotvrdi.TabIndex = 39;
+            this.buttonUlazPotvrdi.UseVisualStyleBackColor = false;
+            this.buttonUlazPotvrdi.Click += new System.EventHandler(this.buttonUlazPotvrdi_Click);
             // 
-            // labelIzlazbroj
+            // pictureBox3
             // 
-            this.labelIzlazbroj.AutoSize = true;
-            this.labelIzlazbroj.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.labelIzlazbroj.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIzlazbroj.Location = new System.Drawing.Point(90, 15);
-            this.labelIzlazbroj.Name = "labelIzlazbroj";
-            this.labelIzlazbroj.Size = new System.Drawing.Size(68, 15);
-            this.labelIzlazbroj.TabIndex = 2;
-            this.labelIzlazbroj.Text = "Izlaz broj: ";
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(410, 62);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(69, 141);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 38;
+            this.pictureBox3.TabStop = false;
             // 
-            // groupBoxRoba
+            // pictureBox2
             // 
-            this.groupBoxRoba.BackColor = System.Drawing.Color.White;
-            this.groupBoxRoba.Controls.Add(this.comboBoxIzlazVrstaRobe);
-            this.groupBoxRoba.Controls.Add(this.labelKolicina);
-            this.groupBoxRoba.Controls.Add(this.textBoxIzlazKolicina);
-            this.groupBoxRoba.Controls.Add(this.labelVrstaRobe);
-            this.groupBoxRoba.Location = new System.Drawing.Point(12, 75);
-            this.groupBoxRoba.Name = "groupBoxRoba";
-            this.groupBoxRoba.Size = new System.Drawing.Size(251, 109);
-            this.groupBoxRoba.TabIndex = 10;
-            this.groupBoxRoba.TabStop = false;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(335, 62);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(69, 141);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 37;
+            this.pictureBox2.TabStop = false;
             // 
-            // comboBoxIzlazVrstaRobe
+            // pictureBox1
             // 
-            this.comboBoxIzlazVrstaRobe.FormattingEnabled = true;
-            this.comboBoxIzlazVrstaRobe.Items.AddRange(new object[] {
-            "Miker",
-            "Vilamet"});
-            this.comboBoxIzlazVrstaRobe.Location = new System.Drawing.Point(115, 28);
-            this.comboBoxIzlazVrstaRobe.Name = "comboBoxIzlazVrstaRobe";
-            this.comboBoxIzlazVrstaRobe.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxIzlazVrstaRobe.TabIndex = 10;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(296, 203);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(202, 138);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 36;
+            this.pictureBox1.TabStop = false;
             // 
-            // labelKolicina
+            // dateTimePickerIzlaz
             // 
-            this.labelKolicina.AutoSize = true;
-            this.labelKolicina.BackColor = System.Drawing.Color.White;
-            this.labelKolicina.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelKolicina.Location = new System.Drawing.Point(15, 63);
-            this.labelKolicina.Name = "labelKolicina";
-            this.labelKolicina.Size = new System.Drawing.Size(56, 17);
-            this.labelKolicina.TabIndex = 9;
-            this.labelKolicina.Text = "Kolicina:";
+            this.dateTimePickerIzlaz.CustomFormat = "dd-MM-yyyy";
+            this.dateTimePickerIzlaz.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePickerIzlaz.Location = new System.Drawing.Point(90, 62);
+            this.dateTimePickerIzlaz.Name = "dateTimePickerIzlaz";
+            this.dateTimePickerIzlaz.Size = new System.Drawing.Size(100, 20);
+            this.dateTimePickerIzlaz.TabIndex = 35;
             // 
-            // textBoxIzlazKolicina
+            // buttonUlazNazad
             // 
-            this.textBoxIzlazKolicina.Location = new System.Drawing.Point(115, 62);
-            this.textBoxIzlazKolicina.Name = "textBoxIzlazKolicina";
-            this.textBoxIzlazKolicina.Size = new System.Drawing.Size(121, 20);
-            this.textBoxIzlazKolicina.TabIndex = 8;
-            // 
-            // labelVrstaRobe
-            // 
-            this.labelVrstaRobe.AutoSize = true;
-            this.labelVrstaRobe.BackColor = System.Drawing.Color.White;
-            this.labelVrstaRobe.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVrstaRobe.Location = new System.Drawing.Point(15, 28);
-            this.labelVrstaRobe.Name = "labelVrstaRobe";
-            this.labelVrstaRobe.Size = new System.Drawing.Size(73, 17);
-            this.labelVrstaRobe.TabIndex = 2;
-            this.labelVrstaRobe.Text = "Vrsta robe:";
+            this.buttonUlazNazad.Location = new System.Drawing.Point(25, 312);
+            this.buttonUlazNazad.MaximumSize = new System.Drawing.Size(75, 23);
+            this.buttonUlazNazad.MinimumSize = new System.Drawing.Size(75, 23);
+            this.buttonUlazNazad.Name = "buttonUlazNazad";
+            this.buttonUlazNazad.Size = new System.Drawing.Size(75, 23);
+            this.buttonUlazNazad.TabIndex = 34;
+            this.buttonUlazNazad.Text = "Nazad";
+            this.buttonUlazNazad.UseVisualStyleBackColor = true;
+            this.buttonUlazNazad.Click += new System.EventHandler(this.buttonUlazNazad_Click_1);
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.comboBoxKupac);
-            this.groupBox2.Controls.Add(this.comboBoxOvlascenoLice);
+            this.groupBox2.Controls.Add(this.comboBoxOvlascenoLiceIzlaz);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.labelKupac);
-            this.groupBox2.Location = new System.Drawing.Point(12, 207);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Location = new System.Drawing.Point(12, 203);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(251, 100);
-            this.groupBox2.TabIndex = 11;
+            this.groupBox2.TabIndex = 33;
             this.groupBox2.TabStop = false;
             // 
             // comboBoxKupac
             // 
             this.comboBoxKupac.FormattingEnabled = true;
-            this.comboBoxKupac.Items.AddRange(new object[] {
-            "Miker",
-            "Vilamet"});
             this.comboBoxKupac.Location = new System.Drawing.Point(115, 15);
             this.comboBoxKupac.Name = "comboBoxKupac";
             this.comboBoxKupac.Size = new System.Drawing.Size(121, 21);
             this.comboBoxKupac.TabIndex = 12;
             // 
-            // comboBoxOvlascenoLice
+            // comboBoxOvlascenoLiceIzlaz
             // 
-            this.comboBoxOvlascenoLice.FormattingEnabled = true;
-            this.comboBoxOvlascenoLice.Items.AddRange(new object[] {
-            "Miker",
-            "Vilamet"});
-            this.comboBoxOvlascenoLice.Location = new System.Drawing.Point(115, 51);
-            this.comboBoxOvlascenoLice.Name = "comboBoxOvlascenoLice";
-            this.comboBoxOvlascenoLice.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxOvlascenoLice.TabIndex = 11;
+            this.comboBoxOvlascenoLiceIzlaz.FormattingEnabled = true;
+            this.comboBoxOvlascenoLiceIzlaz.Location = new System.Drawing.Point(115, 51);
+            this.comboBoxOvlascenoLiceIzlaz.Name = "comboBoxOvlascenoLiceIzlaz";
+            this.comboBoxOvlascenoLiceIzlaz.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxOvlascenoLiceIzlaz.TabIndex = 11;
             // 
             // label3
             // 
@@ -170,76 +155,82 @@
             this.label3.TabIndex = 11;
             this.label3.Text = "Ovlasceno lice:";
             // 
-            // labelKupac
+            // label4
             // 
-            this.labelKupac.AutoSize = true;
-            this.labelKupac.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelKupac.Location = new System.Drawing.Point(15, 16);
-            this.labelKupac.Name = "labelKupac";
-            this.labelKupac.Size = new System.Drawing.Size(47, 17);
-            this.labelKupac.TabIndex = 13;
-            this.labelKupac.Text = "Kupac:";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(15, 16);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(47, 17);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Kupac:";
             // 
-            // pictureBox1
+            // groupBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(296, 190);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(202, 138);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 14;
-            this.pictureBox1.TabStop = false;
+            this.groupBox1.Controls.Add(this.comboBoxVrstaRobeIzlaz);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.textBoxKolicinaIzlaz);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Location = new System.Drawing.Point(12, 88);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(251, 109);
+            this.groupBox1.TabIndex = 32;
+            this.groupBox1.TabStop = false;
             // 
-            // pictureBox2
+            // comboBoxVrstaRobeIzlaz
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(326, 61);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(69, 123);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.comboBoxVrstaRobeIzlaz.FormattingEnabled = true;
+            this.comboBoxVrstaRobeIzlaz.Items.AddRange(new object[] {
+            ""});
+            this.comboBoxVrstaRobeIzlaz.Location = new System.Drawing.Point(115, 28);
+            this.comboBoxVrstaRobeIzlaz.Name = "comboBoxVrstaRobeIzlaz";
+            this.comboBoxVrstaRobeIzlaz.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxVrstaRobeIzlaz.TabIndex = 10;
             // 
-            // pictureBox3
+            // label2
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(401, 61);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(69, 123);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 16;
-            this.pictureBox3.TabStop = false;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(15, 63);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 17);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Kolicina:";
             // 
-            // buttonIzlazPotvrdi
+            // textBoxKolicinaIzlaz
             // 
-            this.buttonIzlazPotvrdi.BackColor = System.Drawing.Color.Transparent;
-            this.buttonIzlazPotvrdi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonIzlazPotvrdi.Image = ((System.Drawing.Image)(resources.GetObject("buttonIzlazPotvrdi.Image")));
-            this.buttonIzlazPotvrdi.Location = new System.Drawing.Point(370, 12);
-            this.buttonIzlazPotvrdi.Name = "buttonIzlazPotvrdi";
-            this.buttonIzlazPotvrdi.Size = new System.Drawing.Size(55, 43);
-            this.buttonIzlazPotvrdi.TabIndex = 14;
-            this.buttonIzlazPotvrdi.UseVisualStyleBackColor = false;
+            this.textBoxKolicinaIzlaz.Location = new System.Drawing.Point(115, 62);
+            this.textBoxKolicinaIzlaz.Name = "textBoxKolicinaIzlaz";
+            this.textBoxKolicinaIzlaz.Size = new System.Drawing.Size(121, 20);
+            this.textBoxKolicinaIzlaz.TabIndex = 8;
             // 
-            // buttonUlazNazad
+            // label1
             // 
-            this.buttonUlazNazad.Location = new System.Drawing.Point(25, 313);
-            this.buttonUlazNazad.Name = "buttonUlazNazad";
-            this.buttonUlazNazad.Size = new System.Drawing.Size(75, 23);
-            this.buttonUlazNazad.TabIndex = 17;
-            this.buttonUlazNazad.Text = "Nazad";
-            this.buttonUlazNazad.UseVisualStyleBackColor = true;
-            this.buttonUlazNazad.Click += new System.EventHandler(this.buttonUlazNazad_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(15, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(73, 17);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Vrsta robe:";
             // 
-            // dateTimePicker1
+            // textBoxIzlazBroj
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(30, 49);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 18;
+            this.textBoxIzlazBroj.Location = new System.Drawing.Point(163, 11);
+            this.textBoxIzlazBroj.Name = "textBoxIzlazBroj";
+            this.textBoxIzlazBroj.Size = new System.Drawing.Size(100, 20);
+            this.textBoxIzlazBroj.TabIndex = 31;
+            // 
+            // labelIzlazbroj
+            // 
+            this.labelIzlazbroj.AutoSize = true;
+            this.labelIzlazbroj.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelIzlazbroj.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIzlazbroj.Location = new System.Drawing.Point(90, 14);
+            this.labelIzlazbroj.Name = "labelIzlazbroj";
+            this.labelIzlazbroj.Size = new System.Drawing.Size(68, 15);
+            this.labelIzlazbroj.TabIndex = 30;
+            this.labelIzlazbroj.Text = "Izlaz broj: ";
             // 
             // Izlaz
             // 
@@ -247,16 +238,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(510, 353);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.buttonUlazNazad);
-            this.Controls.Add(this.buttonIzlazPotvrdi);
+            this.Controls.Add(this.buttonUlazPotvrdi);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.dateTimePickerIzlaz);
+            this.Controls.Add(this.buttonUlazNazad);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBoxRoba);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.textBoxIzlazBroj);
             this.Controls.Add(this.labelIzlazbroj);
+            this.ForeColor = System.Drawing.Color.Black;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(526, 392);
             this.MinimizeBox = false;
@@ -264,13 +257,14 @@
             this.Name = "Izlaz";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Izlaz";
-            this.groupBoxRoba.ResumeLayout(false);
-            this.groupBoxRoba.PerformLayout();
+            this.Load += new System.EventHandler(this.Izlaz_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -278,23 +272,23 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBoxIzlazBroj;
-        private System.Windows.Forms.Label labelIzlazbroj;
-        private System.Windows.Forms.GroupBox groupBoxRoba;
-        private System.Windows.Forms.ComboBox comboBoxIzlazVrstaRobe;
-        private System.Windows.Forms.Label labelKolicina;
-        private System.Windows.Forms.TextBox textBoxIzlazKolicina;
-        private System.Windows.Forms.Label labelVrstaRobe;
+        private System.Windows.Forms.Button buttonUlazPotvrdi;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DateTimePicker dateTimePickerIzlaz;
+        private System.Windows.Forms.Button buttonUlazNazad;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ComboBox comboBoxKupac;
-        private System.Windows.Forms.ComboBox comboBoxOvlascenoLice;
+        private System.Windows.Forms.ComboBox comboBoxOvlascenoLiceIzlaz;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label labelKupac;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Button buttonIzlazPotvrdi;
-        private System.Windows.Forms.Button buttonUlazNazad;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ComboBox comboBoxVrstaRobeIzlaz;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBoxKolicinaIzlaz;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxIzlazBroj;
+        private System.Windows.Forms.Label labelIzlazbroj;
     }
 }

@@ -22,8 +22,8 @@ namespace PresentationLayer
             /*login podaci su zajednicki za sve zaposlene,
              prijava sluzi samo da zastiti koriscenje programa 
             od strane nezaposlenih lica*/
-            string username = "123"; 
-            string password = "123";
+            string username = "0000"; 
+            string password = "0000";
             if(textBoxUsername.Text==username && textBoxPassword.Text == password)
             {
                 this.Hide();

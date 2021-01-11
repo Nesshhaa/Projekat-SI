@@ -17,12 +17,13 @@ namespace PresentationLayer
             InitializeComponent();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+
+        private void Ulaz_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void buttonUlazNazad_Click(object sender, EventArgs e)
+        private void buttonUlazNazad_Click_1(object sender, EventArgs e)
         {
             this.Hide();
             var m = new Meni();
@@ -30,7 +31,7 @@ namespace PresentationLayer
             m.Show();
         }
 
-        private void Ulaz_Load(object sender, EventArgs e)
+        private void buttonUlazPotvrdi_Click(object sender, EventArgs e)
         {
 
         }

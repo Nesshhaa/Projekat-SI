@@ -129,6 +129,7 @@
             this.Controls.Add(this.labelUlaz);
             this.Controls.Add(this.buttonMeniUlaz);
             this.Controls.Add(this.buttonMeniIzlaz);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Meni";
