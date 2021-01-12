@@ -40,7 +40,7 @@ namespace DataAccessLayer
             return result;
         }
 
-        public int InsertTrasanction(Transaction s)
+        public int InsertTransaction(Transaction s)
         {
             using (SqlConnection sqlConnection = new SqlConnection(Constants.connectionString))
             {
