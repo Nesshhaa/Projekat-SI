@@ -10,13 +10,13 @@ namespace BusinessLayer
 {
     public class TransactionBusiness
     {
-        private readonly TrasanctionRepository transactionRepository;
+        private readonly TransactionRepository transactionRepository;
         public TransactionBusiness()
         {
-            this.transactionRepository = new TrasanctionRepository();
+            this.transactionRepository = new TransactionRepository();
         }
 
-        public bool InsertTrasanction(Transaction s)
+        public bool InsertTransaction(Transaction s)
         {
             if (this.transactionRepository.InsertTransaction(s) > 0)
                 return true;

@@ -8,7 +8,7 @@ using DataAccessLayer.Models;
 
 namespace DataAccessLayer
 {
-    public class TrasanctionRepository
+    public class TransactionRepository
     {
         public List<Transaction> GetAllTransactions()
         {

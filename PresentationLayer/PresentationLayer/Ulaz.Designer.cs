@@ -33,7 +33,7 @@
             this.buttonUlazNazad = new System.Windows.Forms.Button();
             this.buttonUlazPotvrdi = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBoxProizvodjac = new System.Windows.Forms.ComboBox();
+            this.comboBoxProizvodjacUlaz = new System.Windows.Forms.ComboBox();
             this.ComboBoxOvlascenoliceUlaz = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -89,7 +89,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.comboBoxProizvodjac);
+            this.groupBox2.Controls.Add(this.comboBoxProizvodjacUlaz);
             this.groupBox2.Controls.Add(this.ComboBoxOvlascenoliceUlaz);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label4);
@@ -99,13 +99,13 @@
             this.groupBox2.TabIndex = 26;
             this.groupBox2.TabStop = false;
             // 
-            // comboBoxProizvodjac
+            // comboBoxProizvodjacUlaz
             // 
-            this.comboBoxProizvodjac.FormattingEnabled = true;
-            this.comboBoxProizvodjac.Location = new System.Drawing.Point(115, 15);
-            this.comboBoxProizvodjac.Name = "comboBoxProizvodjac";
-            this.comboBoxProizvodjac.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxProizvodjac.TabIndex = 12;
+            this.comboBoxProizvodjacUlaz.FormattingEnabled = true;
+            this.comboBoxProizvodjacUlaz.Location = new System.Drawing.Point(115, 15);
+            this.comboBoxProizvodjacUlaz.Name = "comboBoxProizvodjacUlaz";
+            this.comboBoxProizvodjacUlaz.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxProizvodjacUlaz.TabIndex = 12;
             // 
             // ComboBoxOvlascenoliceUlaz
             // 
@@ -269,7 +269,7 @@
         private System.Windows.Forms.Button buttonUlazNazad;
         private System.Windows.Forms.Button buttonUlazPotvrdi;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox comboBoxProizvodjac;
+        private System.Windows.Forms.ComboBox comboBoxProizvodjacUlaz;
         private System.Windows.Forms.ComboBox ComboBoxOvlascenoliceUlaz;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

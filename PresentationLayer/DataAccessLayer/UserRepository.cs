@@ -40,16 +40,6 @@ namespace DataAccessLayer
             return result;
         }
 
-        /* public int InsertUser(User s)
-         {
-             using (SqlConnection sqlConnection = new SqlConnection(Constants.connectionString))
-             {
-                 SqlCommand sqlCommand = new SqlCommand();
-                 sqlCommand.Connection = sqlConnection;
-                 sqlCommand.CommandText = string.Format("INSERT INTO Korisnici VALUES({0},'{1}','{2}','{3}','{4}','{5}')", s.JMBG, s.Ime, s.Prezime, s.Adresa, s.Uloga, s.Telefon);
-                 sqlConnection.Open();
-                 return sqlCommand.ExecuteNonQuery();
-             }
-         }*/
+        
     }
 }
