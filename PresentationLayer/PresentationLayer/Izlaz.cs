@@ -31,7 +31,7 @@ namespace PresentationLayer
         {
             fillComboIzlaz();
         }
-
+        //definicija dugmeta potvrdi, za unos ulaza u bazu
         private void buttonUlazPotvrdi_Click(object sender, EventArgs e)
         {
             Transaction s = new Transaction();
@@ -52,7 +52,7 @@ namespace PresentationLayer
             comboBoxKupac.Text = string.Empty;
             comboBoxOvlascenoLiceIzlaz.Text = string.Empty;
         }
-
+        //dugme zakretanje kroz forme
         private void buttonUlazNazad_Click_1(object sender, EventArgs e)
         {
             this.Hide();
@@ -60,7 +60,7 @@ namespace PresentationLayer
             m.Closed += (s, args) => this.Close();
             m.Show();
         }
-
+        //popunjavanje combox-ova iz baze podataka
         public void fillComboIzlaz()
         {
             List<Balance> balances = this.balanceBusiness.GetBalance();

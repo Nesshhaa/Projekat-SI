@@ -25,10 +25,7 @@ namespace PresentationLayer
             InitializeComponent();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
+       
 
         
 
@@ -36,7 +33,7 @@ namespace PresentationLayer
         {
             fillComboUlaz();
         }
-
+        //definicija dumeta za potvrdu, ubacuje ulaze u bazu
         private void buttonUlazPotvrdi_Click(object sender, EventArgs e)
         {
             Transaction s = new Transaction();
@@ -57,7 +54,7 @@ namespace PresentationLayer
             comboBoxProizvodjacUlaz.Text = string.Empty;
             ComboBoxOvlascenoliceUlaz.Text = string.Empty;
         }
-
+        //popunjava combobox iz baze podataka
         public void fillComboUlaz()
         {
             List<Balance> balances = this.balanceBusiness.GetBalance();
@@ -75,7 +72,7 @@ namespace PresentationLayer
             }
 
         }
-
+        //dugme za kretanje kroz forme
         private void buttonUlazNazad_Click_1(object sender, EventArgs e)
         {
             this.Hide();
