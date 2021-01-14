@@ -9,7 +9,7 @@ using DataAccessLayer.Models;
 namespace DataAccessLayer
 {
     public class TransactionRepository
-    {
+    { //funkcija za prikupljanje transakcija iz baze
         public List<Transaction> GetAllTransactions()
         {
             List<Transaction> result = new List<Transaction>();
@@ -39,7 +39,7 @@ namespace DataAccessLayer
             }
             return result;
         }
-
+        //funkcija za upisivanje transakcija u bazu
         public int InsertTransaction(Transaction s)
         {
             using (SqlConnection sqlConnection = new SqlConnection(Constants.connectionString))

@@ -21,7 +21,8 @@ namespace PresentationLayer
         {
             /*login podaci su zajednicki za sve zaposlene,
              prijava sluzi samo da zastiti koriscenje programa 
-            od strane nezaposlenih lica*/
+            od strane nezaposlenih lica, mogli smo napraviti tabelu u bazi samo za sifru
+            ali smo ostavili ovako zbog manje opterecenosti prototipa*/
             string username = "0000"; 
             string password = "0000";
             if(textBoxUsername.Text==username && textBoxPassword.Text == password)

@@ -21,7 +21,7 @@ namespace PresentationLayer
         {
 
         }
-
+        //dugme za povratak na login
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -29,7 +29,7 @@ namespace PresentationLayer
             l.Closed += (s, args) => this.Close();
             l.Show();
         }
-
+        //dugme za prelazak na formu ulaz
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -37,7 +37,7 @@ namespace PresentationLayer
             u.Closed += (s, args) => this.Close();
             u.Show();
         }
-
+        //dugme za prelazak na formu izlaz
         private void buttonMeniIzlaz_Click(object sender, EventArgs e)
         {
             this.Hide();

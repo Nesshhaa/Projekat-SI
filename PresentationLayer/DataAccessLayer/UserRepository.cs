@@ -10,6 +10,8 @@ namespace DataAccessLayer
 {
     public class UserRepository
     {
+
+        //funkcija za prikupljanje korisnika iz baze
         public List<User> GetAllUsers()
         {
             List<User> result = new List<User>();

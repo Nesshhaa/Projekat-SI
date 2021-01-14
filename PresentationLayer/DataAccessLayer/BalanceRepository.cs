@@ -10,6 +10,7 @@ namespace DataAccessLayer
 {
     public class BalanceRepository
     {
+        /*Funkcija za prikupljanje stanja iz tabele komora*/
         public List<Balance> GetBalance()
         {
             List<Balance> result = new List<Balance>();
